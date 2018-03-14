@@ -6,5 +6,5 @@ setup(name='hive_handler',
       url='https://github.com/codeuniversity/xing-datahub-hive-handler',
       author='Alexander MArtin',
       license='MIT',
-      packages=['hive_handler', 'model'],
+      packages=['xing_datahub_hive_handler', 'model'],
       zip_safe=False)
