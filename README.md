@@ -1,0 +1,1 @@
+# xing-datahub-hive-handler
