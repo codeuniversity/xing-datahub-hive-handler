@@ -1,7 +1,10 @@
 language: python
 python:
-  - "3.6"
+- '3.6'
 install:
-  - make dep
+- make dep
 script:
-  - make test
+- make test
+notifications:
+  slack:
+    secure: eC/VUpO+pnOyuDwVDknx0+JuID8gm+6yogo3rU9cC5/+TZDMN51RHsG6X6skyoZcf40mGuTvGFB+2DlwSSfmYgkFx9xMcCheXxF+BepoxJctsUmkLpuXjgLIEhm3KIRDgql/Fk2tke3SOeyt6HbfBeyXe2I1NplvfTY7ofPKFQ0SJ5QV6c91s9tNMJFYyOg7UobTJUZoEixrXeKgWSmhHsaT8XPQv5YloK3YotS6ML/aeZEa1iVCcKl6OHvPrKvPoMieu/Tikc/MHqlVhx6b+lYyHgKf6dLOFxqjsJY5jWH/6imC/AKObt8mC69gOo3DJ4b8wIuXZDOFWrIDMduSi6283csPZnIHqAmGrhuwNXc/XBl8VLnKCvhAKgp72rg+k421gDVrhvGxkoiINMWPagZ2zTqm41zJQbehHQawQlFBx6G7E7hYT9BCMGdLY154mXxDM8P9FPUjUsacfZLBHFec6mnp5iC8Ez9te0zDxr0hlZHxzhnyCU92V1oMVsB0Qg6oV5Lw+w9ZjoWe2XxXldkgFnSlrvvw0WBEd5TvCEuEwQmiIb8IR76bBlPUfAYgEG4mCTUC4N0A2gT6pzSGKBK1nN+C0EIF47GJ/xJGJYV3dBo+TwpkavUjCmUtustCfG/3biiSM8c779KsvThPyH8AHuIMnL44nUTJKWkrk6g=
