@@ -3,3 +3,6 @@ dep:
 
 test:
 	python model_test.py
+
+integration:
+	./integration.sh
