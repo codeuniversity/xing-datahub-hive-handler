@@ -51,16 +51,16 @@ target_item_schema_string = """
   item_id INT
 """
 
-def create_csv_table(name, location_prefix, schema_string):
+def create_csv_table(name, location, schema_string):
     create_table = """
       CREATE EXTERNAL TABLE {}
       ({})
       ROW FORMAT DELIMITED FIELDS TERMINATED BY ';'
       collection items terminated by '|'
       STORED AS TEXTFILE
-      LOCATION '/user/cloudera/{}/{}b'
+      LOCATION '{}'
       """\
-        .format(name, schema_string,location_prefix, name)
+        .format(name, schema_string, location)
     print('creating csv table: ', name, '...')
     cursor.execute(create_table)
     print('...done!')
